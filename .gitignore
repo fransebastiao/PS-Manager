@@ -1,0 +1,4 @@
+# Files and folders to be ignored by GIT.
+
+.DS_Store
+/target/
