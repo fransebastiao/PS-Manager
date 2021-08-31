@@ -278,7 +278,7 @@ public class InventoryManager extends JFrame implements ActionListener{
                         JLabel zip  = new JLabel("ZIP");
                         JTextField inputZip = new JTextField();
                         
-                        JLabel registerToCellNo  = new JLabel("Register to cell No.");
+                        JLabel registerToCellNo  = new JLabel("Allocate to cell Number.");
                         JTextField inputRegisterToCellNo = new JTextField();
                         
                         JLabel maritalStatus  = new JLabel("Marital Status");
@@ -401,48 +401,48 @@ public class InventoryManager extends JFrame implements ActionListener{
                             @Override
                             public void actionPerformed(ActionEvent e) {
                                 if (e.getSource()==submit){
-                                    String lastName = inputLastName.getText();
-                                    String firstName = inputFirstName.getText();
-                                    String middleName = inputMiddleName.getText();
-                                    String title = (String)inputTitle.getSelectedItem();
-                                    int idNumber = Integer.parseInt(inputIdNumber.getText());
-                                    int cellphoneNumber = Integer.parseInt(inputCellphoneNumber.getText());
-                                    String hairColour = inputHairColour.getText();
-                                    String eyeColour = inputEyeColour.getText();
-                                    String dateOfBirth = inputDOB.getText();
-                                    String race = inputRace.getText();
-                                    String gender = (String) inputGender.getSelectedItem();
-                                    String height = inputHeight.getText();
-                                    String weight = inputWeight.getText();
-                                    int age = Integer.parseInt(inputAge.getText());
-                                    String bookDate = inputBookDate.getText();
-                                    String religion = inputReligion.getText();
-                                    String citizenship = inputCitizenship.getText();
-                                    String city = inputCity.getText();
-                                    String address = inputAddress.getText();
-                                    int zip = Integer.parseInt(inputZip.getText());
-                                    int registerToCellNo = Integer.parseInt(inputRegisterToCellNo.getText());
-                                    String maritalStatus = inputMaritalStatus.getText();
-                                    String bookedBy = inputBookedBy.getText();
-                                    String facility = inputFacility.getText();
-                                    int prisonerNumber = Integer.parseInt(inputPrisonerNumber.getText());
-                                    
-                                    Prisoner p = new Prisoner(lastName, firstName, middleName, title, idNumber, cellphoneNumber,
-                                    hairColour, eyeColour, dateOfBirth, race, gender, height, weight, age, bookDate, religion, citizenship,
-                                    city, address, zip, registerToCellNo, maritalStatus, bookedBy, facility, prisonerNumber);
-                                    
-                                    dao = new PrisonerDAO();
-                                    
                                     try {
-                                        prisoner = dao.submit(p);
+                                        String lastName = inputLastName.getText();
+                                        String firstName = inputFirstName.getText();
+                                        String middleName = inputMiddleName.getText();
+                                        String title = (String)inputTitle.getSelectedItem();
+                                        int idNumber = Integer.parseInt(inputIdNumber.getText());
+                                        int cellphoneNumber = Integer.parseInt(inputCellphoneNumber.getText());
+                                        String hairColour = inputHairColour.getText();
+                                        String eyeColour = inputEyeColour.getText();
+                                        String dateOfBirth = inputDOB.getText();
+                                        String race = inputRace.getText();
+                                        String gender = (String) inputGender.getSelectedItem();
+                                        String height = inputHeight.getText();
+                                        String weight = inputWeight.getText();
+                                        int age = Integer.parseInt(inputAge.getText());
+                                        String bookDate = inputBookDate.getText();
+                                        String religion = inputReligion.getText();
+                                        String citizenship = inputCitizenship.getText();
+                                        String city = inputCity.getText();
+                                        String address = inputAddress.getText();
+                                        int zip = Integer.parseInt(inputZip.getText());
+                                        int registerToCellNo = Integer.parseInt(inputRegisterToCellNo.getText());
+                                        String maritalStatus = inputMaritalStatus.getText();
+                                        String bookedBy = inputBookedBy.getText();
+                                        String facility = inputFacility.getText();
+                                        int prisonerNumber = Integer.parseInt(inputPrisonerNumber.getText());
+                                        
+                                        Prisoner p = new Prisoner(lastName, firstName, middleName, title, idNumber, cellphoneNumber,
+                                                hairColour, eyeColour, dateOfBirth, race, gender, height, weight, age, bookDate, religion, citizenship,
+                                                city, address, zip, registerToCellNo, maritalStatus, bookedBy, facility, prisonerNumber);
+                                        
+                                        dao = new PrisonerDAO();
+                                        
+                                        prisoner = dao.create(p);
+                                        if (prisoner.equals(p)){
+                                            JOptionPane.showMessageDialog(null, "Prisoner added successfully");
+                                        }
+                                        else{
+                                            JOptionPane.showMessageDialog(null, "ERROR: Prisoner could not be added");
+                                        }
                                     } catch (SQLException ex) {
                                         Logger.getLogger(InventoryManager.class.getName()).log(Level.SEVERE, null, ex);
-                                    }
-                                    if (prisoner.equals(p)){
-                                        JOptionPane.showMessageDialog(null, "Prisoner added successfully");
-                                    }
-                                    else{
-                                        JOptionPane.showMessageDialog(null, "ERROR: Prisoner could not be added");
                                     }
                                 }     
                             }                   

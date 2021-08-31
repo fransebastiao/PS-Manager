@@ -10,7 +10,7 @@ import java.sql.SQLException;
  */
 public class PsManagerDbConnection {
     public static Connection prisonersConnection() throws SQLException{
-        String url = "jdb:derby://localhost:1527/PsManagerDb";
+        String url = "jdbc:derby://localhost:1527/PsManagerDb;create=true";
         String user = "fransebastiao";
         String password = "mycput";
 

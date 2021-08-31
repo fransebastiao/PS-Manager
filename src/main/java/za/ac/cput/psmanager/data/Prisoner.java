@@ -69,7 +69,7 @@ public class Prisoner {
         this.prisonerNumber = prisonerNumber;
     }
     
-    public String getLastName(String lastName){
+    public String getLastName(){
         return lastName;
     }
     
@@ -77,7 +77,7 @@ public class Prisoner {
         this.lastName = lastName;
     }
     
-    public String getFirstName(String firstName){
+    public String getFirstName(){
         return firstName;
     }
     
@@ -85,7 +85,7 @@ public class Prisoner {
         this.firstName = firstName;
     }
     
-    public String getMiddleName(String middleName){
+    public String getMiddleName(){
         return middleName;
     }
     
@@ -93,7 +93,7 @@ public class Prisoner {
         this.middleName = middleName;
     }
     
-    public String getTitle(String title){
+    public String getTitle(){
         return title;
     }
     
@@ -101,7 +101,7 @@ public class Prisoner {
         this.title = title;
     }
     
-    public int getIdNumber(int idNumber){
+    public int getIdNumber(){
         return idNumber;
     }
     
@@ -109,7 +109,7 @@ public class Prisoner {
         this.idNumber = idNumber;
     }
     
-    public int getCellphoneNumber(int cellphoneNumber){
+    public int getCellphoneNumber(){
         return cellphoneNumber;
     }
     
@@ -117,7 +117,7 @@ public class Prisoner {
         this.cellphoneNumber = cellphoneNumber;
     }
     
-    public String getHairlColour(String hairColour){
+    public String getHairColour(){
         return hairColour;
     }
     
@@ -125,7 +125,7 @@ public class Prisoner {
         this.hairColour = hairColour;
     }
     
-    public String getEyeColour(String eyeColour){
+    public String getEyeColour(){
         return eyeColour;
     }
     
@@ -133,7 +133,7 @@ public class Prisoner {
         this.eyeColour = eyeColour;
     }
     
-    public String getDateOfBirth(String dateOfBirth){
+    public String getDateOfBirth(){
         return dateOfBirth;
     }
     
@@ -141,7 +141,7 @@ public class Prisoner {
         this.dateOfBirth = dateOfBirth;
     }
     
-    public String getRace(String race){
+    public String getRace(){
         return race;
     }
     
@@ -149,7 +149,7 @@ public class Prisoner {
         this.race = race;
     }
     
-    public String getGender(String gender){
+    public String getGender(){
         return gender;
     }
     
@@ -157,7 +157,7 @@ public class Prisoner {
         this.gender = gender;
     }
     
-    public String getHeight(String height){
+    public String getHeight(){
         return height;
     }
     
@@ -165,7 +165,7 @@ public class Prisoner {
         this.height = height;
     }
     
-    public String getWeight(String weight){
+    public String getWeight(){
         return weight;
     }
     
@@ -173,7 +173,7 @@ public class Prisoner {
         this.weight = weight;
     }
     
-    public int getAge(int age){
+    public int getAge(){
         return age;
     }
     
@@ -181,7 +181,7 @@ public class Prisoner {
         this.age = age;
     }
     
-    public String getBookDate(String bookDate){
+    public String getBookDate(){
         return bookDate;
     }
     
@@ -189,7 +189,7 @@ public class Prisoner {
         this.bookDate = bookDate;
     }
     
-    public String getReligion(String religion){
+    public String getReligion(){
         return religion;
     }
     
@@ -197,7 +197,7 @@ public class Prisoner {
         this.religion = religion;
     }
     
-    public String getCitizenship(String citizenship){
+    public String getCitizenship(){
         return citizenship;
     }
     
@@ -205,7 +205,7 @@ public class Prisoner {
         this.citizenship = citizenship;
     }
     
-    public String getCity(String city){
+    public String getCity(){
         return city;
     }
     
@@ -213,7 +213,7 @@ public class Prisoner {
         this.city = city;
     }
     
-    public String getAddress(String address){
+    public String getAddress(){
         return address;
     }
     
@@ -221,7 +221,7 @@ public class Prisoner {
         this.address = address;
     }
     
-    public int getZip(int zip){
+    public int getZip(){
         return zip;
     }
     
@@ -229,7 +229,7 @@ public class Prisoner {
         this.zip = zip;
     }
     
-    public int getRegisterToCellNo(int registerToCellNo){
+    public int getRegisterToCellNo(){
         return registerToCellNo;
     }
     
@@ -237,7 +237,7 @@ public class Prisoner {
         this.registerToCellNo = registerToCellNo;
     }
     
-    public String getMaritalStatus(String maritalStatus){
+    public String getMaritalStatus(){
         return maritalStatus;
     }
     
@@ -245,14 +245,14 @@ public class Prisoner {
         this.maritalStatus = maritalStatus;
     }
     
-    public String getBookedBy(String bookedBy){
+    public String getBookedBy(){
         return bookedBy;
     }
     
     public void setBookedBy(String bookedBy) {
         this.bookedBy = bookedBy;
     }
-    public String getFacility(String facility){
+    public String getFacility(){
         return facility;
     }  
     
@@ -260,7 +260,7 @@ public class Prisoner {
         this.facility = facility;
     }
     
-    public int getPrisonerNumber(int prisonerNumber){
+    public int getPrisonerNumber(){
         return prisonerNumber;
     }
     
